@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-compatible" content="IE=edge" />
+  <meta name="viewport" content="width-device=width,initial-scale=1.0" />
+  <title>Sejarah Ilmuan muslim Ibnu Sina</title>
+  <style>
+    @media screen and (max-width: 600px) {
+      /*agar halaman form bisa responsif sesuai layar */
+
+      /*agar diklik ada warnannya */
+      a:hover {
+        color: #ff0000;
+      }
+
+      /*1. kunci utama: supaya padding 
+      tidak menambah lebar elemen */
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 10px;
+        font-family: sans-serif;
+      }
+
+      /*conteiner form harus fleksibel */
+      fieldset {
+        width: 100%;
+        /*mengikuti lebar layar */
+        max-width: 100% !important;
+        /*jangan
+        sampai "meluber"  */
+        border: 1px solid #008b8b;
+        padding: 15px;
+      }
+
+      /* input, textarea,dan select harus responsif */
+      input[type="text"],
+      input[type="email"],
+      select,
+      textarea {
+        width: 100%;
+        /*memenuhi lebar fieldset */
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        display: block;
+        /*supaya turun ke bawah,
+        tidak baris ke samping */
+      }
+
+      /*4. khusus untuk radio submit agar tidak berantakan */
+      .gender-groub {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+      }
+
+      button {
+        height: 35px;
+        margin: 5px 0;
+        background-color: skyblue;
+        border: none;
+        border-radius: 5px;
+        color: #333;
+      }
+
+      button:hover {
+        background-color: #333;
+        color: skyblue;
+      }
+
+      form {
+        padding: 10px;
+        /*agar teks
+        tidak terlalu kesamping */
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      label {
+        display: inline-block;
+        margin-bottom: 15px;
+        font-size: 18px;
+        margin-right: 15px;
+        vertical-align: middle;
+      }
+
+      input[type="radio"],
+      input[type="chekbox"] {
+        width: auto;
+        /*biar ukurannya
+        kembali normal */
+        display: inlaine;
+        /*biar sebelahan 
+        sama teksnya */
+        margin-right: 5px;
+        text-align: center !important;
+        /*kasih 
+        jarak sedikit kiri- kanan */
+      }
+
+      input[type="email"],
+      input[type="text"],
+      textarea {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="menu">
+    <a href="penulis.html" style="color: #800080">Penulis</a>|
+    <a href="index.html" style="color: #800080">Artikle</a>|
+    <a href="form.html" style="color: #800080">Saran dan Kritik</a>|
+  </nav>
+  <hr style="border-width: 3px; border-style: double solid #000000" />
+  <form method="post" data-netlify="true">
+    <fieldset>
+      <legend style="text-transform: capitalize; font-weight: bold">
+        Pesan dan kesan anda
+      </legend>
+      <p>
+        <label>Username:</label><br />
+        <input type="text" name="username" placeholder="your username..." required />
+      </p>
+      <p>
+        <label>Email:</label><br />
+        <input type="email" name="email" placeholder="your email..." required />
+      </p>
+      <p>
+        <label>Warna Faforit:</label><br />
+        <input type="color" name="warna faforit" placeholder="your color..." required />
+      </p>
+      <p>
+        <label>Apakah konten ini bermanfaat ?:</label><br />
+        <select name="apakah konten ini bermanfaat ?">
+          <option value="pilih salah satu ya!...">Piih salah satu</option>
+          <option value="Ya">Ya</option>
+          <option value="Tidak">idak</option>
+        </select>
+      </p>
+      <p>
+        <label>Jenis kelamin:</label><br />
+        <label><input type="radio" name="jenis_kelamn" value="Laki-Laki" required />Laki-Laki</label>
+        <label><input type="radio" name="jenis_kelamin" value="Perempuan" required />Perempuan</label>
+      </p>
+      <p>
+        <label>Agama Anda:</label><br />
+        <select name="agama" required>
+          <optgroup label="Pilih Agama...">
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Budha">Budha</option>
+            <option value="Konghucu">Koghucu</option>
+          </optgroup>
+        </select>
+      </p>
+      <p>
+        <label>Minat Anda:</label><br />
+        <input type="text" list="Minat" name="minat Anda" placeholder="minat anda..." required />
+        <datalist id="Minat" required>
+          <option value="Membaca">Membaca</option>
+          <option value="Olahraga">Olahraga</option>
+          <option value="Seni">Seni</option>
+          <option value="Berkebun">Berkebun</option>
+          <option value="Menulis">Menulis</option>
+          <option value="Belajar">Belajar</option>
+          <option value="Lainnya">Lainnya</option>
+        </datalist>
+      </p>
+      <p>
+        <label>Umur:</label><br />
+        <input type="number" min="10" max="85" name="umur" required />
+      </p>
+      <p>
+        <label>Tanggal lahir:</label><br />
+        <input type="date" name="tanggal lahir" required />
+      </p>
+      <p>
+        <label>Saran dan Kritik Anda:</label><br />
+        <textarea name="messege" placeholder="saran dan kritik..." rows="5" cols="90" required></textarea>
+      </p>
+      <p>
+      <div class="gender-groub">
+        <button type="button">Kirim</button>
+      </div>
+      </p>
+    </fieldset>
+  </form>
+  <hr style="border-width: 3px; border-style: double" />
+  <article style="font-family: sans-serif; text-align: justify">
+    <p>
+      Terima kasih, karna anda sudah mengisi halaman form ini ya agar setelah
+      kalian mengisi form ini dapat sangat membantu saya sekali, dengan ini
+      saran dan kritik kalian dapat menjadi
+      <strong>Penyemangat</strong> dan <strong>Motivasi</strong> agar saya
+      terus bisa memperbaiki web saya kalau ada yang kurang dan dapat terus
+      untuk <strong>Mengedukasi</strong> teman-teman semuanya, semoga kritik
+      kalian dapat membantu saya unutuk terus memperbaiki website saya, Sampai
+      jumpa lagi.
+    </p>
+  </article>
+  <hr style="border-width: 3px; border-style: double" />
+  <footer style="text-align: center">
+    <div>copyright &copy; Muhammad Azril 2026.All Rights Reserved.</div>
+  </footer>
+</body>
+
+</html>
