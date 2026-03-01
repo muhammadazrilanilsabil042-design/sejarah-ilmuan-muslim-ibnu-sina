@@ -33,6 +33,15 @@
                 /*agar gak nempel kali sama hp */
             }
 
+            body {
+                overflow-x: hidden;
+            }
+
+            *{
+                box-sixing: border-box;
+            }
+            
+
             .gambarkitab {
                 width: 90%;
                 max-width: 100%;
@@ -317,17 +326,10 @@
                 box-sizing: border-box;
             }
 
-            .konten-center {
-                text-align: center;
-                padding: 20px;
-            }
-
-            .konten-center img {
-                display: block;
-                margin:   15px auto;
-                max-width: 450px;
+            .konten-center, img{
+                width: 500px;
+                max-width: 100%;
                 height: auto;
-                border-radius: 8%;
             }
 
             h1,
@@ -516,17 +518,10 @@
                 box-sizing: border-box;
             }
 
-            .konten-center {
-                text-align: center;
-                padding: 20px;
-            }
-
             .konten-center img {
-                display: block;
-                margin: 0 auto 15px;
-                max-width: 550px;
+                width: 600px;
+                max-width: 100%;
                 height: auto;
-                border-radius: 8%;
             }
 
             h1,
@@ -672,8 +667,10 @@
                 <strong>bapak ilmuan kedokteran modern muslim</strong>
             </p>
         </header>
-        <img src="Screenshot_20260208_173800_Chrome.jpg" style="border-radius: 10%"
+        <div class="gambarkitab">
+        <img src="Screenshot_20260208_173800_Chrome.jpg" 
             alt="gambar ibnu sina" title="tokoh dan ilmuan musim yaitu ibnu sina" />
+        </div>
         <article style="font-family: sans-serif;">
             <section id="konten paragraf">
                 <p>
@@ -735,8 +732,10 @@
                     <h2 style="font-family: 'Times New Roman', Times, serif; text-transform: capitalize;">
                         kehidupan dan biografi ibnu sina
                     </h2>
+                    <div class="gambarkitab">
                     <img src="Screenshot_20260206_175227_Google.jpg"
-                        alt="Gambar ilustrasi Ibnu Sina" style="border-radius: 10% solid #808080;" />
+                        alt="Gambar ilustrasi Ibnu Sina"/>
+                    </div>
                     <p>
                         Ibnu Sina atau (<strong><em>Abu Ali al-Husain bin Abdullah bin Sina</em></strong>)
                         lahir pada tahun <time>980 M</time> di <strong>Afsyanah</strong> daerah dekat
@@ -808,7 +807,7 @@
                     <div class="konten-center">
                         <figure>
                             <img src="Screenshot_20260215_170609_Chrome.jpg" 
-                                style="border-radius: 10% ;" alt="Kitab Al-Qannun" />
+                            " alt="Kitab Al-Qannun" />
                             <figcaption style="text-align: left">Kitab Al-Qannun karya Ibnu Sina sebagai<br />
                                 Ensiklopedia kedokteran pada masa itu
                             </figcaption>
@@ -868,8 +867,10 @@
                     <h2 style="font-family: 'Times New Roman', Times, serif;">
                         Apa saja ya pemikiran Ibnu Sina ?
                     </h2>
-                    <img src="Screenshot_20260216_062707_Google.jpg"  style="border-radius: 10%"
+                    <div class="gambarkitab">
+                    <img src="Screenshot_20260216_062707_Google.jpg"  
                         alt="ilustrasi gambar Ibnu Sina" />
+                    </div>
                     <p>
                         Ibnu Sina memberi sumbangan besar atas perkembangan awal <strong>Filsafat Islam</strong>
                         , terutama dalam tema <b>Logika</b>,<b>Etika</b>, dan <b>Metafisika</b>. Sebagian besar
@@ -962,7 +963,6 @@
                     <figure>
                         <img src="Screenshot_20260209_210634_Chrome.jpg"
                             alt="Foto Kitab Al-Qanun karya Ibnu Sina" class="gambar-kitab"
-                            style="border-radius: 10%; width: 100%; height: auto;" />
                         <figcaption>Kitab Ibnu Sina diterjemahkan<br /> ke bahasa eropa pada <time>tahun 1507</time>
                         </figcaption>
                     </figure>
@@ -995,8 +995,10 @@
                 <h2 style="text-transform: capitalize; font-family: 'Times New Roman', Times, serif">
                     5 Karya dan sumbangsih beliau semasa hidupnya.
                 </h2>
-                <img src="Screenshot_20260217_114138_Google.jpg" width="400" height="200"
-                    alt="Gambar ilustrasi Ibnu sina" style="border-radius: 10%" />
+                <div class="gambarkitab">
+                <img src="Screenshot_20260217_114138_Google.jpg" 
+                    alt="Gambar ilustrasi Ibnu sina" />
+                </div>
                 <p>
                     Karya Ibnu Sina yang terkenal menjadi tonggak penting dalam
                     <strong>sejarah peradaban islam dan dunia</strong>.dalam rekam
@@ -1259,6 +1261,7 @@
 
 
 </html>
+
 
 
 
