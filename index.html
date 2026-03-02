@@ -19,18 +19,11 @@
             }
 
             img {
-                /*gambar tidak akan lagi melebar ke samping */
-                height: auto;
-                /*tinggi gambar akan menyesuaikan secara proposional */
-                display: block;
-                /*menghilangkan sela kecil dibawah gambar */
-                margin: 15px auto;
-                /* membuat gambar  otomatis ditengah */
-                border-radius: 10px;
-                /*agar membuat lengkungan pada sudut gambar */
-                width: 100%;
-                max-width: 100%;
-                /*agar gak nempel kali sama hp */
+                max-width: 100% !important; /*gambar gak pernah melebihi lebar layar */
+                height: auto; /*tinggi gambar akan menyesuaikan layar */
+                display: block; /*menghilangkan spasi kosong dibawah gambar */
+                margin: 0 auto; /*agar gambarya ditengah */
+                overflow-x: hidden;
             }
 
     
@@ -1210,6 +1203,7 @@
 
 
 </html>
+
 
 
 
